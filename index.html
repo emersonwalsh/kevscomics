@@ -12,30 +12,19 @@
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/gradient.js"></script>
 </head>
 
 <body>
-    <div class="context">
-        <div>
-            <img id="logo" src="./assets/img/logo.png" width="240" />
-        </div>
+    <canvas id="gradient-canvas" style="width:100vw;height:100vh"></canvas>
+    <div class="content">
+        <img id="logo" src="./assets/img/logo.png" width="240" />
         <h1>Coming Soon!</h1>
     </div>
-
-    <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+    <script>
+        var gradient = new Gradient()
+        gradient.initGradient('#gradient-canvas');
+    </script>
 </body>
 
 </html>
