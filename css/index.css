@@ -20,9 +20,20 @@ body {
     transform:translate(-50%, -50%);
 }
 
+.logo {
+    width: 300px;
+}
+
 #gradient-canvas {
     --gradient-color-1: #6ec3f4;
     --gradient-color-2: #3a3aff;
     --gradient-color-3: #ff61ab;
     --gradient-color-4: #E63946;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 220px;
+    }
+  }
